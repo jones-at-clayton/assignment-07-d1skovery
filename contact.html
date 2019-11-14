@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--
+    Kareema Alabi
+    Assignment 06: JavaScript
+    November 10, 2019
+-->
+<html lang="en">
+    
+    <head>
+        <title>Spilt Milk Pages</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/main.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:regular,italic,bold">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:regular,italic,bold">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Kareema Alabi">
+        <meta name="description" content="Spilt Milk Pages is an online book review blog dedicated to sharing the fun in diverse teen and children's books.">
+        <script>
+            function tyAlert() {
+               alert ("Thank you so much for your message!\nPlease look forward to a response soon.");
+               /* document.write ("Thank you so much for your message!\nPlease look forward to a response soon."); */
+            }
+      </script> 
+    </head>
+    
+    <body>
+    <div id="container">
+        <header>
+                <ul>
+                    <li><a href="/"><img src="/images/holahoop_cats.png" alt="Four cats, going from smaller to bigger in size, hulahooping"/></a></li>
+                    <li><a href="index.html" style="font-size:48px;"><strong>spilt milk pages</strong></a></li>
+                    <li style="font-size: 10px; letter-spacing: 2px;"><strong><em>can you see yourself in these books?</em></strong></li>
+                </ul>
+        </header>
+        
+        <nav>
+            <div class="mobile">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="review_index.html">a-z review index</a></li>
+            </ul>
+            </div>
+            
+            <div class="desktop">
+            <p>
+                <a href="index.html">home</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="about.html">about</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="contact.html">contact</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="review_index.html">a-z review index</a>
+            </p>
+            </div>
+        </nav>
+        
+        <main>
+            <div class="desktop">
+            <div id="main_content">
+            
+                <p style="font-family: 'Montserrat'; font-size:28px;">
+                    <a href="/"><strong>contact</strong></a>
+                </p>
+                
+                <hr>
+                
+                <!-- Form for contacting -->
+                <form>
+                    <fieldset>
+                        <legend>COMMENTS &amp; QUESTIONS</legend>
+                        <!-- Text control -->
+                        <p>
+                            <label for="name">
+                                N A M E <span>(REQUIRED)</span>
+                            </label>
+                        </p>
+                        <input type="text" id="name">
+                        <!-- Email control -->
+                        <p>
+                            <label for="email">
+                                E M A I L <span>(REQUIRED)</span>
+                            </label>
+                        </p>
+                        <input type="email" id="email">
+                        <!-- Textarea control -->
+                        <p>
+                            <label for="message">
+                                M E S S A G E <span>(REQUIRED)</span>
+                            </label>
+                        </p>
+                        <textarea id="message" rows="10" cols="70" placeholder="Type your message here . . ."></textarea>
+                        <br>
+                        <br>
+                        <!-- Submit control -->
+                        <input type="submit" class="submit" value="SUBMIT" onclick="tyAlert()">
+                    </fieldset>
+                </form>
+                
+                <br>
+                
+                <!-- Form for sending feedback -->
+                <form>
+                    <fieldset>
+                        <legend>FEEDBACK</legend>
+                        <!-- Select control -->
+                        <p>
+                            <label for="goodfeatures">
+                                Select one feature that you enjoy about the blog:
+                            </label>
+                        </p>
+                        <select id="goodfeatures">
+                            <option label="x" selected></option>
+                            <option label="Upload">Accessible upload schedule</option>
+                            <option label="Diverse">Diversity in books and authors</option>
+                            <option label="Replies">Quick replies to messages</option>
+                            <option label="Layout">Unique layout and content</option>
+                            <option label="Reviews">Honest, reliable reviews</option>
+                            <option label="Interact">User/Blogger interaction</option>
+                            <option label="Fun">Fun book tags, challenges, etc.</option>
+                        </select>
+                        
+                        <!-- Select control -->
+                        <p>
+                            <label for="improvements">
+                                Select one feature that you would like to see improve on the blog:
+                            </label>
+                        </p>
+                        <select id="improvements">
+                            <option label="x" selected></option>
+                            <option label="Genres">Genres of the books reviewed</option>
+                            <option label="Updates">Updating schedule of blog posts</option>
+                            <option label="Interact">User/Blogger interaction</option>
+                            <option label="Diverse">Diversity in authors reviewed</option>
+                            <option label="More">More book tags and challenges</option>
+                            <option label="Less">Less book tags and challenges</option>
+                            <option label="Layout">The blog layout</option>
+                            <option label="Themed">Add holiday and themed posts</option>
+                        </select>
+                        
+                        <!-- Radio button control -->
+                        <p>
+                            <label for="rate">
+                                How would you rate this blog?
+                            </label>
+                        </p>
+                        <input type="radio" id="rate" value="5stars"> I enjoy the blog and look forward to new content!<br>
+                        <input type="radio" name="rate" value="4stars"> I know I can refer to this blog for book recommendations and inspiration.<br>
+                        <input type="radio" name="rate" value="3stars"> Not my favorite blog, but reliable for book information.<br>
+                        <input type="radio" name="rate" value="2stars"> Sigh... it's not as compelling as other blogs.<br>
+                        <input type="radio" name="rate" value="1stars"> I do not plan on refering back to this blog. Needs major improvements.<br>
+                        <br>
+                        <br>
+                        <!-- Submit control -->
+                        <input type="submit" class="submit" value="SUBMIT" onclick="tyAlert()">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="side_content">
+                <p style="font-family: 'Montserrat'; font-size:28px;">
+                    <a href="/"><strong>where's the milk?</strong></a>
+                </p>
+                <p>
+                    <em>Spilt Milk Pages</em>'s goal is to share my love of books with other pre-teens and teens my age, but also to review and promote diverse books that represent minority voices. Because I, myself, am a marginalized voice and grew up with no characters to relate to, Book Review Blog aims to provide recommendations and amazingly diverse book options and be a space for comfort and fun! Let's come together and share our love for reading!
+                </p>
+            </div>
+            </div>
+            
+            <!-- Mobile-First -->
+            <div class="mobile">
+                <p style="font-family: 'Montserrat'; font-size:28px;">
+                    <a href="/"><strong>contact</strong></a>
+                </p>
+                
+                <hr>
+                
+                <!-- Form for contacting -->
+                <form>
+                    <fieldset>
+                        <legend>COMMENTS &amp; QUESTIONS</legend>
+                        <!-- Text control -->
+                        <p>
+                            <label for="name1">
+                                N A M E <span>(REQUIRED)</span>
+                            </label>
+                        </p>
+                        <input type="text" id="name1">
+                        <!-- Email control -->
+                        <p>
+                            <label for="email1">
+                                E M A I L <span>(REQUIRED)</span>
+                            </label>
+                        </p>
+                        <input type="email" id="email1">
+                        <!-- Textarea control -->
+                        <p>
+                            <label for="message1">
+                                M E S S A G E <span>(REQUIRED)</span>
+                            </label>
+                        </p>
+                        <textarea id="message1" rows="10" cols="40" placeholder="Type your message here . . ."></textarea>
+                        <br>
+                        <br>
+                        <!-- Submit control -->
+                        <input type="submit" class="submit" value="SUBMIT" onclick="tyAlert()">
+                    </fieldset>
+                </form>
+                
+                <br>
+                
+                <!-- Form for sending feedback -->
+                <form>
+                    <fieldset>
+                        <legend>FEEDBACK</legend>
+                        <!-- Select control -->
+                        <p>
+                            <label for="goodfeatures1">
+                                Select one feature that you enjoy about the blog:
+                            </label>
+                        </p>
+                        <select id="goodfeatures1">
+                            <option label="x" selected></option>
+                            <option label="Upload">Accessible upload schedule</option>
+                            <option label="Diverse">Diversity in books and authors</option>
+                            <option label="Replies">Quick replies to messages</option>
+                            <option label="Layout">Unique layout and content</option>
+                            <option label="Reviews">Honest, reliable reviews</option>
+                            <option label="Interact">User/Blogger interaction</option>
+                            <option label="Fun">Fun book tags, challenges, etc.</option>
+                        </select>
+                        
+                        <!-- Select control -->
+                        <p>
+                            <label for="improvements1">
+                                Select one feature that you would like to see improve on the blog:
+                            </label>
+                        </p>
+                        <select id="improvements1">
+                            <option label="x" selected></option>
+                            <option label="Genres">Genres of the books reviewed</option>
+                            <option label="Updates">Updating schedule of blog posts</option>
+                            <option label="Interact">User/Blogger interaction</option>
+                            <option label="Diverse">Diversity in authors reviewed</option>
+                            <option label="More">More book tags and challenges</option>
+                            <option label="Less">Less book tags and challenges</option>
+                            <option label="Layout">The blog layout</option>
+                            <option label="Themed">Add holiday and themed posts</option>
+                        </select>
+                        
+                        <!-- Radio button control -->
+                        <p>
+                            <label for="rate1">
+                                How would you rate this blog?
+                            </label>
+                        </p>
+                        <input type="radio" id="rate1" value="5stars"> I enjoy the blog and look forward to new content!<br>
+                        <input type="radio" name="rate" value="4stars"> I know I can refer to this blog for book recommendations and inspiration.<br>
+                        <input type="radio" name="rate" value="3stars"> Not my favorite blog, but reliable for book information.<br>
+                        <input type="radio" name="rate" value="2stars"> Sigh... it's not as compelling as other blogs.<br>
+                        <input type="radio" name="rate" value="1stars"> I do not plan on refering back to this blog. Needs major improvements.<br>
+                        <br>
+                        <br>
+                        <!-- Submit control -->
+                        <input type="submit" class="submit" value="SUBMIT" onclick="tyAlert()">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        </div>
+        <footer>
+            <p>
+                Have a question, comment, or concern? <strong><a href="mailto:spiltmilkpages@email.com">Don’t hesitate to send us an email.</a></strong>
+            </p>
+            <p style="padding-bottom: 50px;">
+                Copyright &copy; 2019 by <a href="/">Spilt Milk Pages</a>. All Rights Reserved.
+            </p>
+            
+            <hr>
+            
+            <p style="padding-top: 50px; text-align: center;">
+                Due November 17, 2019.
+            </p>
+        </footer>
+    </body>
+    
+</html>
